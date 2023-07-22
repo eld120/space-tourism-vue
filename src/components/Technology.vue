@@ -11,6 +11,6 @@
 </template>
  
 
-<style scoped>
+<style scoped style="sass">
 
 </style>

@@ -10,28 +10,57 @@
             <li><a href=""><span>02</span>Crew</a></li>
             <li><a href=""><span>03</span>Technology</a></li>
         </ul>
+        <button  id="hamburger"></button>
     </nav>
 </template>
-<style lang="scss">
-nav {
-    ul {
-        display: flex;
-        flex-direction: row;
-    }
+<style scoped lang="sass">
+nav 
+    min-height: 4em
+    width: 100vw
+    display: flex
+    
+    
+    ul 
+        display: flex
+        flex-direction: column
+        padding: 0
+        
+        
+        
+    
+    li 
+        
+        list-style-type: none
+        margin: auto auto auto 0
+        a 
+            span 
+                margin: 0 1em
+            
+            color: white
+        
+    
+    button
+        border: none
+        background: url('../assets/icon-hamburger.svg')
+        border-radius: 0px
+        height: 1.3em
+        width: 1.7em
+        padding: 0
+        margin: auto 2em auto auto
+    
+    
 
-    li {
-
-        justify-content: space-between;
-        list-style-type: none;
-
-        a {
-            span {
-                margin: 0 1em;
-            }
-
-            color: white;
-        }
-    }
-
-}
+@media only screen and (min-width: 768px)
+        nav 
+            ul
+            flex-direction: row
+            
+        
+    
+    @media only screen and (min-width: 992px) 
+        #hamburger
+            display: none
+        
+        
+    
 </style>
