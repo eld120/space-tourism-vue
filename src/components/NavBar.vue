@@ -3,14 +3,14 @@
 
 </script>
 <template>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-expanded="false">
         <ul>
             <li><a href=""><span>00</span>Home</a></li>
             <li><a href=""><span>01</span>Destination</a></li>
             <li><a href=""><span>02</span>Crew</a></li>
             <li><a href=""><span>03</span>Technology</a></li>
         </ul>
-        <button  id="hamburger"></button>
+        <button  id="hamburger"><span class="hidden-but-accessible">Menu</span></button>
     </nav>
 </template>
 <style scoped lang="sass">
@@ -47,6 +47,8 @@ nav
         width: 1.7em
         padding: 0
         margin: auto 2em auto auto
+        z-index: 5
+        cursor: pointer
     
     
 
@@ -57,10 +59,10 @@ nav
             
         
     
-    @media only screen and (min-width: 992px) 
-        #hamburger
-            display: none
-        
+@media only screen and (min-width: 992px) 
+    #hamburger
+        display: none
+    
         
     
 </style>
