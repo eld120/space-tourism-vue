@@ -80,6 +80,50 @@ select {
   margin: 0;
 }
 
+.heading-one {
+  font-size: 9.375em;
+  line-height: 1.1;
+  font-family: "Bellefair", serif;
+}
+
+.heading-two {
+  font-size: 6.25em;
+  font-family: "Bellefair", serif;
+}
+
+.heading-three {
+  font-size: 3.5em;
+  font-family: "Bellefair", serif;
+}
+
+.heading-four {
+  font-size: 2em;
+  font-family: "Bellefair", serif;
+}
+
+.heading-five {
+  font-size: 1.75em;
+  letter-spacing: 0.296875em;
+}
+
+.subheading-one {
+  font-size: 1.75em;
+}
+
+.subheading-two {
+  font-size: 0.875em;
+  letter-spacing: 0.146875em;
+}
+
+.nav-text {
+  font-size: 1em;
+  letter-spacing: 0.16875em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 :root {
   font-family: "Barlow Condensed", sans-serif;
   line-height: 1.5;
@@ -105,6 +149,7 @@ a:hover {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -126,31 +171,6 @@ body {
   }
 }
 
-h1 {
-  font-size: 9.375em;
-  line-height: 1.1;
-  font-family: "Bellefair", serif;
-}
-
-h2 {
-  font-size: 6.25em;
-  font-family: "Bellefair", serif;
-}
-
-h3 {
-  font-size: 3.5em;
-  font-family: "Bellefair", serif;
-}
-
-h4 {
-  font-size: 2em;
-  font-family: "Bellefair", serif;
-}
-
-h5 {
-  font-size: 1.75em;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -167,17 +187,12 @@ button:hover {
   border-color: #646cff;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 .card {
   padding: 2em;
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;

@@ -32,6 +32,7 @@ a:hover
 
 
 body 
+  overflow-x: hidden
   margin: 0
   display: flex
   flex-direction: column
@@ -51,26 +52,6 @@ body
   
 
 
-h1 
-  // font-size: 3.2em
-  font-size: 9.375em
-  line-height: 1.1
-  font-family: variables.$heading-font
-
-h2
-  font-size: 6.25em
-  font-family: variables.$heading-font
-
-h3
-  font-size: 3.5em
-  font-family: variables.$heading-font
-
-h4
-  font-size: 2em
-  font-family: variables.$heading-font
-
-h5 
-  font-size: 1.75em
 
 
 button 
@@ -87,9 +68,9 @@ button
 button:hover 
   border-color: #646cff
 
-button:focus,
-button:focus-visible 
-  outline: 4px auto -webkit-focus-ring-color
+// button:focus,
+// button:focus-visible 
+//   outline: 4px auto -webkit-focus-ring-color
 
 
 .card 
@@ -97,7 +78,7 @@ button:focus-visible
 
 
 #app 
-  max-width: 1280px
+  max-width: 100vw
   margin: 0 auto
   padding: 2rem
   text-align: center
@@ -115,3 +96,4 @@ button:focus-visible
     background-color: #f9f9f9
   
 
+  
