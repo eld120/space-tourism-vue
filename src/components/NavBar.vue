@@ -1,22 +1,22 @@
 <script setup lang="ts">
     import { ref } from 'vue';
-    let toggle = ref(false)
+    let hamburgerToggle = ref(false)
     
     function menuToggle(){
-        toggle.value = !toggle.value
+        hamburgerToggle.value = !hamburgerToggle.value
         
     }
 </script>
 <template>
     <nav class="navbar" role="navigation" aria-expanded="false">
-        <ul class="menu" :class="{expand: toggle}">
+        <img src="../assets/logo.svg" alt="SPACE WEBSITE LOGO">
+        <ul class="menu" :class="{'expand': hamburgerToggle}">
             <li><a href="" class="nav-text"><span class="bold">00</span>Home</a></li>
             <li><a href="" class="nav-text"><span class="bold">01</span>Destination</a></li>
             <li><a href="" class="nav-text"><span class="bold">02</span>Crew</a></li>
-            
             <li><a href="" class="nav-text"><span class="bold">03</span>Technology</a></li>
         </ul>
-        <button  id="hamburger" @click="menuToggle"><span class="hidden-but-accessible">Menu</span></button>
+        <button  id="hamburger" @click="menuToggle" :class="{'hamburger-toggle': hamburgerToggle}"><span class="hidden-but-accessible">Menu</span></button>
         
     </nav>
 </template>
@@ -25,14 +25,11 @@ nav
     min-height: 4em
     width: 100vw
     display: flex
-    // input
-    //     opacity: 0
-    //     z-index: 0
-    //     padding: 0
-    //     top: 3.5em
-    //     right: 2.2em
-    //     display: block
-    //     position: absolute
+    
+    img
+        max-width: 2.5em
+        max-height: 2.5em
+        margin: auto auto auto 1.5em
     ul 
         display: flex
         flex-direction: column
@@ -54,10 +51,10 @@ nav
         border: none
         background: url('../assets/icon-hamburger.svg')
         border-radius: 0px
-        height: 1.3em
-        width: 1.7em
+        height: 1.3125em
+        width: 1.5em
         padding: 0
-        margin: auto 2em auto auto
+        margin: auto 1.5em auto auto
         display: block
         position: relative
         z-index: 1
@@ -81,6 +78,9 @@ nav
         transition: right 0.3s ease
     .expand
         right: 0
+    .hamburger-toggle
+        background: url('../assets/icon-close.svg')
+        background-repeat: no-repeat
 
 
 @media only screen and (min-width: 768px)
@@ -89,7 +89,8 @@ nav
                 flex-direction: row
             li
                 margin: auto auto auto 0
-        
+            button:
+                display: none
     
 @media only screen and (min-width: 992px) 
     #hamburger
