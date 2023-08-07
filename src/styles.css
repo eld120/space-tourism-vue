@@ -91,6 +91,11 @@ select {
   font-family: "Bellefair", serif;
 }
 
+.heading-two-mobile {
+  font-size: 5em;
+  font-family: "Bellefair", serif;
+}
+
 .heading-three {
   font-size: 3.5em;
   font-family: "Bellefair", serif;

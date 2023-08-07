@@ -20,16 +20,17 @@
         
     </nav>
 </template>
-<style  lang="sass">
+<style scoped lang="sass">
 nav 
     min-height: 4em
     width: 100vw
     display: flex
+    padding: 0 1.5em 0 0
     
     img
         max-width: 2.5em
         max-height: 2.5em
-        margin: auto auto auto 1.5em
+        margin: auto auto auto 0
     ul 
         display: flex
         flex-direction: column
@@ -55,8 +56,8 @@ nav
         width: 1.5em
         padding: 0
         margin: auto 1.5em auto auto
-        display: block
-        position: relative
+        // display: block
+        // position: relative
         z-index: 1
         -webkit-user-select: none
         -moz-user-select: none
