@@ -56,5 +56,14 @@ const headerIntro = ref("So, you want to travel to")
     width: 9.375em
     margin: auto auto 0 auto
     z-index: 1
-    
+@media only screen and (min-width: 768px)
+    .section
+        max-width: 28.125em
+    .circle
+        height: 15.125em
+        width: 15.125em
+        border-radius: 10em
+        bottom:5.625em
+    .explore
+        font-size: 2em
 </style>
