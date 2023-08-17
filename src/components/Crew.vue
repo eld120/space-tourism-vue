@@ -11,6 +11,12 @@
 </template>
  
 
-<style scoped>
+<style scoped lang="Sass">
+
+
+
+/* @media only screen and (min-width: 766px) */
+
+/* @media only screen and (min-width: 990px)  */
 
 </style>

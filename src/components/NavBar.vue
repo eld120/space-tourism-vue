@@ -56,7 +56,7 @@ nav
         margin: auto 0 auto auto
         // display: block
         // position: relative
-        z-index: 1
+        z-index: 3
         -webkit-user-select: none
         -moz-user-select: none
         -ms-user-select: none
@@ -65,18 +65,20 @@ nav
         display: flex
         flex-direction: column
         position: absolute
-        background: rgb(150, 150, 150, 0.7)
+        background: rgb(10, 10, 15, 0.05)
+        backdrop-filter: blur(10px)
         width: 300px
         margin: -100px 0 0 -50px
         padding: 50px
         padding-top: 125px
-        height: 100vh
+        height: 70vh
         list-style-type: none
         /* Hide the menu off-screen to the left */
         right: -100%
         -webkit-transition: right 0.3s ease
         -o-transition: right 0.3s ease
         transition: right 0.3s ease
+        z-index: 2
     .expand
         right: 0
     .hamburger-toggle
@@ -109,10 +111,19 @@ nav
         .bold
             display: none
     
-@media only screen and (min-width: 992px) 
+@media only screen and (min-width: 990px) 
     #hamburger
         display: none
-    
+    nav
+        padding-left: 3.4375em
+        .menu
+            min-width: 43.125em
+            width: 60%
+        
+        .bold
+            display: inline
+        .nav-text
+            display: inline
     
     
 </style>

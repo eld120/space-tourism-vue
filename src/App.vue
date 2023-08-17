@@ -12,7 +12,6 @@ import Home from './components/Home.vue';
 </template>
 
 <style scoped lang="sass">
-  main
-    min-height: 100%
+ 
   
 </style>
